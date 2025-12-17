@@ -11,6 +11,7 @@ import {
   ArrowRight,
   Mail,
   Phone,
+  ExternalLink,
 } from "lucide-react";
 
 export default function SpedyonPortfolio() {
@@ -70,21 +71,76 @@ export default function SpedyonPortfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      category: "Web Development",
+      title: "Jobifyy",
+      category: "Mobile App Development",
       description:
-        "Full-stack e-commerce solution with payment integration and admin dashboard",
+        "All-in-one service marketplace connecting customers with trusted professionals for home services, beauty, IT support, and more.",
+      image: "/jobiffy.webp",
+      // image:
+      //   "https://play-lh.googleusercontent.com/ZcgLasu95aKsUNUYkU-LL-snt6qBH_wZo2IpOEXWIpjGJodYzsIUd-pQkP8LKHkobDw=w526-h296-rw", // Jobifyy screenshot (fallback if needed)
+      link: "https://play.google.com/store/apps/details?id=com.jobifyy.user",
     },
     {
-      title: "Fitness Tracking App",
-      category: "Mobile Development",
+      title: "Jobifyy Partner",
+      category: "Mobile App Development",
       description:
-        "Cross-platform mobile app for tracking workouts and nutrition",
+        "Companion app for service providers to manage jobs, schedules, bookings, and earnings in real-time.",
+      image: "/jobifyyy.webp",
+      // image:
+      //   "https://play-lh.googleusercontent.com/ZcgLasu95aKsUNUYkU-LL-snt6qBH_wZo2IpOEXWIpjGJodYzsIUd-pQkP8LKHkobDw=w526-h296-rw",
+      link: "https://play.google.com/store/apps/details?id=com.jobifyy.admin",
     },
     {
-      title: "Real Estate Portal",
+      title: "Marvellex Wallet",
+      category: "Mobile App Development",
+      description:
+        "Secure crypto wallet supporting Ethereum & Binance chains with WalletConnect and multi-chain features.",
+      image:
+        "https://images.sftcdn.net/images/t_app-cover-s-16-9,f_auto/p/20017839-4755-415a-bbd0-b46f58b7ed10/3326660058/marvellex-wallet-screenshot",
+      link: "https://play.google.com/store/apps/details?id=io.marvellex",
+    },
+    {
+      title: "Bajao: Music & Audiobooks",
+      category: "Mobile App Development",
+      description:
+        "Pakistan's music streaming platform with millions of audio/video songs, audiobooks, and short reels.",
+      image:
+        "https://images.sftcdn.net/images/t_app-cover-s-16-9,f_auto/p/2d04ec23-b35a-4b12-ac23-09b491aaf88a/144420396/bajao-1-million-audio-and-video-songs-screenshot",
+      link: "https://play.google.com/store/apps/details?id=bajao.music",
+    },
+    {
+      title: "Vidly.tv",
+      category: "Mobile App Development",
+      description:
+        "OTT platform streaming Pakistani movies, dramas, music, and Turkish series.",
+      image:
+        "https://play-lh.googleusercontent.com/ZcgLasu95aKsUNUYkU-LL-snt6qBH_wZo2IpOEXWIpjGJodYzsIUd-pQkP8LKHkobDw=w526-h296-rw",
+      link: "https://play.google.com/store/apps/details?id=com.rockvillegroup.vidly",
+    },
+    {
+      title: "Rabt: Digital Business Cards",
+      category: "Mobile App Development",
+      description:
+        "Modern networking app for sharing digital business cards, contacts, and media via QR codes.",
+      image:
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/3f/f4/dd3ff419-98e1-4871-9a0d-591e0c440bea/AppIcon-0-1x_U007epad-0-1-0-sRGB-85-220-0.png/1200x630wa.png",
+      link: "https://play.google.com/store/apps/details?id=com.rabt.digital",
+    },
+    {
+      title: "Talent Tube (Mobile App)",
+      category: "Mobile App Development",
+      description:
+        "Short-video talent marketplace where creators showcase skills and companies post immersive job stories.",
+      image: "/tt.png",
+      link: "https://play.google.com/store/apps/details?id=talent.tube.com",
+    },
+    {
+      title: "Talent Tube Web Platform",
       category: "Web Development",
-      description: "Property listing platform with advanced search and filters",
+      description:
+        "Full-featured web version of Talent Tube – responsive platform for job postings, creator profiles, video reels, and seamless hiring workflow across desktop and mobile browsers.",
+      image: "/tt-web1.png",
+      link: "https://tt.mlxsoft.com/",
     },
   ];
 
@@ -283,7 +339,7 @@ export default function SpedyonPortfolio() {
               Featured Projects
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Showcasing our latest work and success stories
+              Showcasing our latest mobile app work and success stories
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -292,8 +348,11 @@ export default function SpedyonPortfolio() {
                 key={index}
                 className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all hover:transform hover:scale-105"
               >
-                <div className="h-48 bg-gradient-to-br from-purple-600/30 to-pink-600/30 flex items-center justify-center">
-                  <Code className="w-16 h-16 text-purple-300" />
+                <div
+                  className="h-80 bg-cover bg-center flex items-center justify-center"
+                  style={{ backgroundImage: `url(${project.image})` }}
+                >
+                  {/* <Smartphone className="w-16 h-16 text-purple-300 opacity-50" /> */}
                 </div>
                 <div className="p-6">
                   <div className="text-sm text-purple-400 mb-2">
@@ -303,9 +362,16 @@ export default function SpedyonPortfolio() {
                     {project.title}
                   </h3>
                   <p className="text-gray-400 mb-4">{project.description}</p>
-                  <button className="text-purple-400 hover:text-purple-300 font-semibold inline-flex items-center">
-                    View Details <ArrowRight className="ml-2 w-4 h-4" />
-                  </button>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-400 hover:text-purple-300 font-semibold inline-flex items-center"
+                  >
+                    {project.category.includes("Mobile")
+                      ? "View on Play Store"
+                      : "Visit Website"}
+                  </a>
                 </div>
               </div>
             ))}

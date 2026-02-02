@@ -99,33 +99,33 @@ export default function SpedyonPortfolio() {
         "https://images.sftcdn.net/images/t_app-cover-s-16-9,f_auto/p/20017839-4755-415a-bbd0-b46f58b7ed10/3326660058/marvellex-wallet-screenshot",
       link: "https://play.google.com/store/apps/details?id=io.marvellex",
     },
-    {
-      title: "Bajao: Music & Audiobooks",
-      category: "Mobile App Development",
-      description:
-        "Pakistan's music streaming platform with millions of audio/video songs, audiobooks, and short reels.",
-      image:
-        "https://images.sftcdn.net/images/t_app-cover-s-16-9,f_auto/p/2d04ec23-b35a-4b12-ac23-09b491aaf88a/144420396/bajao-1-million-audio-and-video-songs-screenshot",
-      link: "https://play.google.com/store/apps/details?id=bajao.music",
-    },
-    {
-      title: "Vidly.tv",
-      category: "Mobile App Development",
-      description:
-        "OTT platform streaming Pakistani movies, dramas, music, and Turkish series.",
-      image:
-        "https://play-lh.googleusercontent.com/ZcgLasu95aKsUNUYkU-LL-snt6qBH_wZo2IpOEXWIpjGJodYzsIUd-pQkP8LKHkobDw=w526-h296-rw",
-      link: "https://play.google.com/store/apps/details?id=com.rockvillegroup.vidly",
-    },
-    {
-      title: "Rabt: Digital Business Cards",
-      category: "Mobile App Development",
-      description:
-        "Modern networking app for sharing digital business cards, contacts, and media via QR codes.",
-      image:
-        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/3f/f4/dd3ff419-98e1-4871-9a0d-591e0c440bea/AppIcon-0-1x_U007epad-0-1-0-sRGB-85-220-0.png/1200x630wa.png",
-      link: "https://play.google.com/store/apps/details?id=com.rabt.digital",
-    },
+    // {
+    //   title: "Bajao: Music & Audiobooks",
+    //   category: "Mobile App Development",
+    //   description:
+    //     "Pakistan's music streaming platform with millions of audio/video songs, audiobooks, and short reels.",
+    //   image:
+    //     "https://images.sftcdn.net/images/t_app-cover-s-16-9,f_auto/p/2d04ec23-b35a-4b12-ac23-09b491aaf88a/144420396/bajao-1-million-audio-and-video-songs-screenshot",
+    //   link: "https://play.google.com/store/apps/details?id=bajao.music",
+    // },
+    // {
+    //   title: "Vidly.tv",
+    //   category: "Mobile App Development",
+    //   description:
+    //     "OTT platform streaming Pakistani movies, dramas, music, and Turkish series.",
+    //   image:
+    //     "https://play-lh.googleusercontent.com/ZcgLasu95aKsUNUYkU-LL-snt6qBH_wZo2IpOEXWIpjGJodYzsIUd-pQkP8LKHkobDw=w526-h296-rw",
+    //   link: "https://play.google.com/store/apps/details?id=com.rockvillegroup.vidly",
+    // },
+    // {
+    //   title: "Rabt: Digital Business Cards",
+    //   category: "Mobile App Development",
+    //   description:
+    //     "Modern networking app for sharing digital business cards, contacts, and media via QR codes.",
+    //   image:
+    //     "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/3f/f4/dd3ff419-98e1-4871-9a0d-591e0c440bea/AppIcon-0-1x_U007epad-0-1-0-sRGB-85-220-0.png/1200x630wa.png",
+    //   link: "https://play.google.com/store/apps/details?id=com.rabt.digital",
+    // },
     {
       title: "Talent Tube (Mobile App)",
       category: "Mobile App Development",
